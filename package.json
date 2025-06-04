@@ -15,7 +15,16 @@
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "cssnano": "^7.0.7",
     "postcss-cli": "^11.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anzaiakira654/tailwind_test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anzaiakira654/tailwind_test/issues"
+  },
+  "homepage": "https://github.com/anzaiakira654/tailwind_test#readme"
 }
