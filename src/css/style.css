@@ -8,7 +8,7 @@
 
 @layer base {
     body{
-        @apply m-0 w-full min-w-[320px] text-[#3C3C43] text-left text-[20px] overflow-hidden p-0  bg-white font-sans;
+        @apply m-0 w-full min-w-[320px] text-[#3C3C43] text-left text-[20px] p-0  bg-white font-sans;
     }
     a{
         @apply text-black no-underline hover:opacity-50;
