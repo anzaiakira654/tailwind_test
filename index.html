@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+    <script src="./js/jquery-3.3.1.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/main.js"></script>
+</head>
+<body>
+    <header class="fixed top-0 w-full h-[100px] bg-white z-[999] flex items-center">
+    <div class="w-[100%] mx-auto flex items-center justify-between">
+        
+        <!-- ロゴ -->
+        <div class="logo w-[300px] max-sm:w-[240px] p-6">
+        <a href="index.html">
+            <img src="img/logo01.png" alt="" width="420" height="100" />
+        </a>
+        </div>
+
+        <!-- PCナビゲーション -->
+        <nav class="nav_pc hidden lg:block">
+        <ul class="flex space-x-4">
+            <li><a href="news.html" class="block py-5 px-3 text-base">NEWS</a></li>
+            <li><a href="company.html" class="block py-5 px-3 text-base">会社情報</a></li>
+            <li><a href="business.html" class="block py-5 px-3 text-base">事業内容</a></li>
+            <li><a href="recruit.html" class="block py-5 px-3 text-base">求人情報</a></li>
+            <li><a href="contact.html" class="block py-5 px-3 text-base">お問い合わせ</a></li>
+        </ul>
+        </nav>
+
+        <!-- スマホ用ハンバーガー -->
+        <div class="header_sp lg:hidden relative right-5 flex items-center justify-between">
+        <div class="hamburger flex flex-col justify-center items-center cursor-pointer p-3">
+            <span class="block w-[25px] h-[3px] bg-black my-[3px] relative"></span>
+            <span class="block w-[25px] h-[3px] bg-black my-[3px] relative"></span>
+            <span class="block w-[25px] h-[3px] bg-black my-[3px] relative"></span>
+        </div>
+        <nav class="nav_sp hidden flex-col absolute top-full left-[40%] bg-[#FFFEFB] w-[60%] h-screen border-t border-gray-400 z-[9999]">
+            <ul>
+            <li class="border-b border-gray-500"><a href="index.html" class="block p-3 text-base">TOPページ</a></li>
+            <li class="border-b border-gray-500"><a href="news.html" class="block p-3 text-base">NEWS</a></li>
+            <li class="border-b border-gray-500"><a href="company.html" class="block p-3 text-base">会社情報</a></li>
+            <li class="border-b border-gray-500"><a href="recruit.html" class="block p-3 text-base">求人情報</a></li>
+            <li class="border-b border-gray-500"><a href="contact.html" class="block p-3 text-base">お問い合わせ</a></li>
+            <li class="border-b border-gray-500"><a href="sitemap.html" class="block p-3 text-base">サイトマップ</a></li>
+            <li class="border-b border-gray-500"><a href="business.html" class="block p-3 text-base">事業内容</a></li>
+            <li class="border-b border-gray-500"><a href="business.html#biz_sec02-1" class="block p-3 text-base">法人向け営業代行業務</a></li>
+            <li class="border-b border-gray-500"><a href="business.html#biz_sec02-2" class="block p-3 text-base">営業コンサルティング</a></li>
+            <li class="border-b border-gray-500"><a href="business.html#biz_sec02-3" class="block p-3 text-base">テレアポ支援</a></li>
+            <li class="border-b border-gray-500"><a href="business.html#biz_sec02-4" class="block p-3 text-base">営業研修・人材育成</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    </header>
+
+    <!-- トップに戻るボタン -->
+    <div class="fixed bottom-0 right-0 w-[80px] h-[80px] z-[998] bg-[#454545] border-t border-l border-white font-bold hover:opacity-50">
+    <a href="#" class="w-full h-full flex items-center justify-center text-white">
+        <p class="text-[30px] rotate-[-90deg]">＞</p>
+    </a>
+    </div>
+
+    <!-- ファーストビュー -->
+    <section id="top_FV" class="relative flex items-center text-left text-white mt-[100px] bg-cover bg-center bg-no-repeat h-[762px] max-md:h-[540px] max-sm:h-[80vh]" style="background-image: url('img/top_FV.png');">
+    <div class="absolute bottom-[60px] right-0 bg-[rgba(11,40,66,0.85)] text-white px-[100px] py-[30px] pl-[120px] max-sm:px-[20px] max-sm:pl-[50px]" style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%)">
+        <h2 class="text-[36px] md:text-[48px] font-bold leading-snug">時代は変わり続ける。<br>だから、挑み続ける。</h2>
+    </div>
+    </section>
+
+    <section id="top_sec01" class="bg-cover bg-center bg-no-repeat h-[800px] max-h-[700px] md:h-[58vw] sm:h-[190vw] sm:max-h-[950px]" style="background-image: url('img/top_FV2.png');">
+
+        <!-- タイトル -->
+        <div class="section_title text-center">
+            <h2 class="text-[60px] font-bold max-sm:text-[26px] py-20 ">営業に、もっと人のチカラを。</h2>
+        </div>
+
+        <!-- メインコンテンツ -->
+        <div class="flex justify-between gap-[50px] w-[1200px] max-w-[90%] mx-auto max-sm:flex-col max-sm:w-[90%]">
+            <div class="w-1/2 max-sm:w-full">
+                <img src="img/top_img01.png" alt="" width="570" height="473" class="h-auto" />
+            </div>
+            <div class="w-1/2 max-sm:w-full flex items-center max-sm:pt-[50px]">
+                <p class="text-[20px] leading-[30px]">
+                    営業は、ただ商品を売るだけの仕事ではありません。<br>
+                    クライアントの想いを受け止め、その先の未来をともにつくる仕事です。<br>
+                    私たちは、数字だけでなく“人”を大切にしながら、変化の時代に挑み続けています。<br><br>
+                    <span class="block text-right font-bold">代表取締役　田中 一成</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

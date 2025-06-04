@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+    --color-test-black: oklch(0% 0 0);
+    --color-test-white: oklch(100% 0 0);
+    --color-test-gray: oklch(0% 0 0.1);
+}
+
+@layer base {
+    body{
+        @apply m-0 w-full min-w-[320px] text-[#3C3C43] text-left text-[20px] overflow-hidden p-0  bg-white font-sans;
+    }
+    a{
+        @apply text-black no-underline hover:opacity-50;
+    }
+    img{
+        @apply w-full h-auto;
+    }
+    h2{
+        @apply text-[60px] font-bold;
+    }
+    h3{
+        @apply text-[28px] font-bold;
+    }
+    p{
+        @apply text-[20px] leading-[30px];
+    }
+    .button {
+        @apply w-fit bg-[#1F6DB5] mt-[50px] mx-auto whitespace-nowrap;
+    }
+    .button a {
+        @apply block box-border px-[50px] py-[30px] text-white no-underline hover:opacity-50;
+    }
+}
+
+@layer components {
+    .test-card {
+        @apply bg-white p-4 rounded-lg;
+    }
+
+}
+
+
